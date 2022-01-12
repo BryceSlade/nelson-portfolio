@@ -13,11 +13,10 @@ const About = () => {
             <div className="a-right">
                 <h1 className='a-title'>About Me</h1>
                 <p className='a-sub'>
-                    DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+                    DDDDDDDDDDDDDDDDDDDDDDDDDDD
                 </p>
                 <p className='a-desc'>
-                    eoisbstrbstrbrwtbrtbrwtbrtbpiouhbtnrgilhjbervflikjqnbervlijqebnrvliqjervbnpiqeorjvbnqpierjvbnqpijrvbqpierjvnbqpeirojvnbqerv]
-                </p>
+                    eoisbstrbstr </p>
                 <div className="a-award">
                     <img src={nbsbackground} alt="" className="a-award-img" />
                     <div className="a-award-texts">

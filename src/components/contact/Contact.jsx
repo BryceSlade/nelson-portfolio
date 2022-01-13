@@ -5,10 +5,11 @@ import address from '../../img/address.png'
 import { useRef } from 'react'
 import emailjs from 'emailjs-com';
 import { useState } from 'react';
-// import { Grid, Paper, Textfield, Button } from '@material-ui/core';
+import { Grid, Paper, TextField, Button } from '@material-ui/core';
 
 const Contact = () => {
     const formRef = useRef()
+    const [inputs, setInputs] = useState('')
     const [sent, setSent] = useState(false)
 
     const handleSubmit = event => {
@@ -17,6 +18,7 @@ const Contact = () => {
         .then((result) => {
             console.log(result.text);
             setSent(true)
+            setInputs('')
         }, (error) => {
             console.log(error.text);
         });
@@ -44,39 +46,82 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
+
                     <div className="c-right">
-                        <p className="c-desc">
-                            <b>Interested?</b> Send me an email regarding employment!
-                        </p>
-                        <form ref={formRef} onSubmit={handleSubmit}>
-                            <input
-                                type='text'
-                                placeholder='Name'
-                                name='user_name'
-                            />
-                            <input
-                                type='text'
-                                placeholder='Subject'
-                                name='user_subject'
-                            />
-                            <input
-                                type='text'
-                                placeholder='Email'
-                                name='user_email'
-                            />
-                            <textarea 
-                                rows='5'
-                                placeholder='Message'
-                                name='message'
-                            />
-                            <button>Submit</button>
-                            {sent && 'Thank you!'}
-                        </form>
+                        <Grid>
+                            <Paper className='paper' elevations={20} style={paperStyle}>
+                                <p className="c-desc">
+                                    <b>Interested?</b> Send me an email!
+                                </p>
+                                <form ref={formRef} onSubmit={handleSubmit}>
+                                    <TextField
+                                        style={textboxStyle}
+                                        fullWidth
+                                        variant='outlined'
+                                        label='name'
+                                        // value={inputs}
+                                        // onChange={(e)=>setInputs(e.target.inputs)}
+                                        type='text'
+                                        placeholder='enter name'
+                                        name='user_name'
+                                    />
+                                    <TextField
+                                        style={textboxStyle}
+                                        fullWidth
+                                        variant='outlined'
+                                        label='subject'
+                                        // value={inputs}
+                                        // onChange={(e)=>setInputs(e.target.inputs)}
+                                        type='text'
+                                        placeholder='subject'
+                                        name='user_subject'
+                                    />
+                                    <TextField
+                                        style={textboxStyle}
+                                        fullWidth
+                                        variant='outlined'
+                                        label='email'
+                                        // value={inputs}
+                                        // onChange={(e)=>setInputs(e.target.inputs)}
+                                        type='text'
+                                        placeholder='enter email'
+                                        name='user_email'
+                                    />
+                                    <TextField
+                                        style={textboxStyle}
+                                        fullWidth
+                                        label='message'
+                                        variant='outlined'
+                                        multiline
+                                        rows={5}
+                                        // value={inputs}
+                                        // onChange={(e)=>setInputs(e.target.inputs)}
+                                        placeholder='Type message!'
+                                        name='message'
+                                    />
+                                    <Button 
+                                        variant='contained' 
+                                        type='submit' 
+                                        style={buttonStyle} 
+                                        fullWidth
+                                    >
+                                        Submit
+                                    </Button>
+                                    {sent && 'Thank you!'}
+                                </form>
+                            </Paper>
+                        </Grid>
                     </div>
+                    
+
                 </div>
             </div>
         </secion>
     )
 }
+
+const paperStyle = {padding: 20, height: '55vh', width: 450}
+const textboxStyle = {margin: '0.8rem 0'}
+const buttonStyle = {margin: '0.8rem auto', backgroundColor: '#ff8317', width: '50%'}
 
 export default Contact

@@ -5,6 +5,7 @@ import address from '../../img/address.png'
 import { useRef } from 'react'
 import emailjs from 'emailjs-com';
 import { useState } from 'react';
+// import { Grid, Paper, Textfield, Button } from '@material-ui/core';
 
 const Contact = () => {
     const formRef = useRef()
@@ -22,57 +23,59 @@ const Contact = () => {
     }
 
     return (
-        <div className="c">
-            <div className="c-bg"></div>
-            <div className="c-wrapper">
-                <div className="c-left">
-                    <h1 className="c-title">Contact Me</h1>
-                    <div className="c-info">
-                        <div className="c-info-item">
-                            <img src={phone} alt="Phone" className="c-icon-p" />
-                            <p className='phone'>480-526-2044</p>
-                        </div>
-                        <div className="c-info-item">
-                            <img src={email} alt="Email" className="c-icon-e" />
-                            <p className="email">bryceslade@gmail.com</p>
-                        </div>
-                        <div className="c-info-item">
-                            <img src={address} alt="Address" className="c-icon-a" />
-                            <p className="address">Arizona, Remote</p>
+        <secion id='contact'>
+            <div className="c">
+                <div className="c-bg"></div>
+                <div className="c-wrapper">
+                    <div className="c-left">
+                        <h1 className="c-title">Contact Me</h1>
+                        <div className="c-info">
+                            <div className="c-info-item">
+                                <img src={phone} alt="Phone" className="c-icon-p" />
+                                <p className='phone'>480-526-2044</p>
+                            </div>
+                            <div className="c-info-item">
+                                <img src={email} alt="Email" className="c-icon-e" />
+                                <p className="email">bryceslade@gmail.com</p>
+                            </div>
+                            <div className="c-info-item">
+                                <img src={address} alt="Address" className="c-icon-a" />
+                                <p className="address">Arizona, Remote</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="c-right">
-                    <p className="c-desc">
-                        <b>Interested?</b> Send me an email regarding employment!
-                    </p>
-                    <form ref={formRef} onSubmit={handleSubmit}>
-                        <input
-                            type='text'
-                            placeholder='Name'
-                            name='user_name'
-                        />
-                        <input
-                            type='text'
-                            placeholder='Subject'
-                            name='user_subject'
-                        />
-                        <input
-                            type='text'
-                            placeholder='Email'
-                            name='user_email'
-                        />
-                        <textarea 
-                            rows='5'
-                            placeholder='Message'
-                            name='message'
-                        />
-                        <button>Submit</button>
-                        {sent && 'Thank you!'}
-                    </form>
+                    <div className="c-right">
+                        <p className="c-desc">
+                            <b>Interested?</b> Send me an email regarding employment!
+                        </p>
+                        <form ref={formRef} onSubmit={handleSubmit}>
+                            <input
+                                type='text'
+                                placeholder='Name'
+                                name='user_name'
+                            />
+                            <input
+                                type='text'
+                                placeholder='Subject'
+                                name='user_subject'
+                            />
+                            <input
+                                type='text'
+                                placeholder='Email'
+                                name='user_email'
+                            />
+                            <textarea 
+                                rows='5'
+                                placeholder='Message'
+                                name='message'
+                            />
+                            <button>Submit</button>
+                            {sent && 'Thank you!'}
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
+        </secion>
     )
 }
 

@@ -1,6 +1,7 @@
 .i {
     display: flex;
     height: 93vh;
+    padding-top: 3.5%;
 }
 
 .i-left {

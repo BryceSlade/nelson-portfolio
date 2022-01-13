@@ -7,6 +7,13 @@ import emailjs from 'emailjs-com';
 import { useState } from 'react';
 import { Grid, Paper, TextField, Button } from '@material-ui/core';
 
+// const initialState = {
+//     name: '',
+//     subject: '',
+//     email: '',
+//     message: '',
+// }
+
 const Contact = () => {
     const formRef = useRef()
     const [inputs, setInputs] = useState('')
@@ -49,7 +56,7 @@ const Contact = () => {
 
                     <div className="c-right">
                         <Grid>
-                            <Paper className='paper' elevations={20} style={paperStyle}>
+                            <Paper elevation={24} style={paperStyle} background->
                                 <p className="c-desc">
                                     <b>Interested?</b> Send me an email!
                                 </p>
@@ -59,7 +66,7 @@ const Contact = () => {
                                         fullWidth
                                         variant='outlined'
                                         label='name'
-                                        // value={inputs}
+                                        // value={inputs.name}
                                         // onChange={(e)=>setInputs(e.target.inputs)}
                                         type='text'
                                         placeholder='enter name'

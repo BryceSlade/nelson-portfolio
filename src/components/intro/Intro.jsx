@@ -17,7 +17,7 @@ const Intro = () => {
                                 <div className="i-title-item">Aspirer</div>
                             </div>
                         </div>
-                        <p className="i-desc"><i>"I have not failed. I've just found 10,000 ways that won't work!"</i></p>
+                        <p className="i-desc"><i>"I have not failed. I've just found 10,000 ways that won't work."</i></p>
                         <p className='quote'>By Thomas Edison, <span className='kidding'>probably coding</span></p>
                     </div>
                 </div>

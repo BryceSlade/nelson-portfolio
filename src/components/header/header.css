@@ -1,35 +1,70 @@
 .header {
     height: 8vh;
     width: 100%;
-    background-color: transparent;
-    /* opacity: .5; */
-    /* position: fixed; */
+    background-color: white;
+    position: fixed;
     z-index: 100;
     display: flex;
     align-items: center;
-    /* border: 1px solid red; */
+    border-bottom: 1px solid lightgray;
 }
 
 .links-left {
     display: flex;
     justify-content: center;
     width: 50%;
-    /* border: 1px solid red; */
 }
 
 .links-left a {
     color: black;
-    background-color: white;
     text-align: center;
     width: 12%;
     text-decoration: none;
     font-size: 1.1rem;
-    border: 0.1rem solid black;
-    border-radius: 30px;
     margin: 0 1rem;
     padding: .2rem 0;
     letter-spacing: .035em;
+    position: relative;
+    transition: color .4s ease-out;
 }
+
+.links-left a::after {
+    border-radius: 1em;
+    border-top: .1em solid lightgray;
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: .14em;
+    left: 0;
+    transition: right .4s cubic-bezier(0,.5,0,1),border-color .4s ease-out;
+}
+
+.links-left a:hover::after {
+    animation: anchor-underline 2s cubic-bezier(0,.5,0,1) infinite;
+    border-color: rgb(43, 43, 43);
+}
+
+.links-left a:hover {
+    text-decoration: none;
+    color: orange;
+}
+
+@keyframes anchor-underline {
+    0%, 10% {
+      left: 0;
+      right: 100%;
+    }
+    40%, 60% {
+      left: 0;
+      right: 0;
+    }
+    90%, 100% {
+      left: 100%;
+      right: 0;
+    }
+}
+
+
 
 .links-right {
     /* border: 1px solid red; */

@@ -91,3 +91,53 @@
     color: #555;
     margin-bottom: .625rem;
 }
+
+@media screen and (max-width: 480px) {
+    .a {
+        /* border: 1px solid red; */
+        height: 100vh;
+    }
+
+    .a-left {
+        display: none;
+    }
+
+    .a-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* .a-title {
+        border: 1px solid red;
+    } */
+
+    .a-sub {
+        /* border: 1px solid red; */
+        height: 20vh;
+    }
+
+    /* .a-desc {
+        border: 1px solid red;
+    } */
+
+    .a-award {
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+
+    .a-award-img {
+        /* border: 1px solid red; */
+        margin-left: 2
+    }
+
+    .a-award-texts {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .a-award-desc {
+        font-size: 1.2rem;
+    }
+}

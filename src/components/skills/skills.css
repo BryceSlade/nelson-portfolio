@@ -38,3 +38,28 @@
     font-size: 1.5rem;
 }
 
+@media screen and (max-width: 480px) {
+    .skills {
+        height: 70vh;
+        /* border: 1px solid red; */
+        margin-top: 5%;
+    }
+
+    .skills-texts {
+        /* border: 1px solid red; */ 
+        width: 100%;
+    }
+
+    .skills-container {
+        border-top: 2px solid #ff8317;
+        width: 100%;
+    }
+
+    .s-list {
+        width: 50%;
+    }
+
+    .s {
+        font-size: 1.4rem;
+    }
+}

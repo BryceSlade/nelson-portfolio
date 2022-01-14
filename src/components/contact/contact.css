@@ -73,8 +73,21 @@ form {
     margin-top: 1.25rem;
 }
 
-/* @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
+    .c {
+        border: 1px solid red;
+        height: 150vh;
+    }
+
     .c-wrapper {
         flex-direction: column;
     }
-} */
+
+    /* .c-right {
+        width: 100%;
+    } */
+    
+    /* .paper {
+        width: 50%;
+    } */
+}

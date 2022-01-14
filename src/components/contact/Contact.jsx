@@ -49,7 +49,7 @@ const Contact = () => {
 
                     <div className="c-right">
                         <Grid>
-                            <Paper elevation={24} style={paperStyle} background->
+                            <Paper elevation={24} style={paperStyle} className='paper'>
                                 <p className="c-desc">
                                     <b>Interested?</b> Send me an email!
                                 </p>
@@ -120,7 +120,7 @@ const Contact = () => {
     )
 }
 
-const paperStyle = {padding: 20, height: '55vh', width: 450}
+const paperStyle = {padding: 20, height: '60vh', width: 400}
 const textboxStyle = {margin: '0.8rem 0'}
 const buttonStyle = {margin: '0.8rem auto', backgroundColor: '#ff8317', width: '50%'}
 

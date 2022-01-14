@@ -1,9 +1,32 @@
+// import React, { useState, useEffect } from 'react';
 import './header.css';
 import github from '../../img/github.png';
 import linkedin from '../../img/linkedin.png';
 import twitter from '../../img/twitter.png';
 
 const Header = () => {
+
+    // const [state, setState] = useState({
+    //     mobileView: false,
+    //     drawerOpen: false,
+    // });
+
+    // const { mobileView, drawerOpen } = state;
+
+    // useEffect(() => {
+    //     const setResponsive = () => {
+    //         return window.innerWidth < 1000
+    //             ? setState((prevState) => ({ ...prevState, mobileView: true }))
+    //             : setState((prevState) => ({ ...prevState, mobileView: false }));
+    // };
+
+    //     setResponsiveness();
+    //     window.addEventListener("resize", () => setResponsiveness());
+
+    //     return () => {
+    //         window.removeEventListener("resize", () => setResponsiveness());
+    //     };
+    // }, []);
 
     return (
         <div className="header">

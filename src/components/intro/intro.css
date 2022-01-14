@@ -97,8 +97,40 @@
     right: 0;
 }
 
-/* @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .i {
         flex-direction: column;
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 100vh;
+        margin: 0;
     }
-} */
+
+    .i-left {
+        margin: 0;
+        /* border: 1px solid red; */
+    }
+
+    .i-left-wrapper {
+        /* border: 1px solid red; */
+        /* height: 100vh; */
+        /* display: flex; */
+        /* justify-content: center; */
+        padding-top: 20%;
+        margin: 0;
+    }
+
+    /* .i-intro {
+        font-size: 2rem;
+    } */
+
+    .i-name {
+        font-size: 2.5rem;
+    }
+
+    .i-right {
+        /* border: 1px solid red; */
+        margin: 0;
+        
+    }
+}

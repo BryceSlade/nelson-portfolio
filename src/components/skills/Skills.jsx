@@ -16,7 +16,7 @@ const ProductList = () => (
                             <li>CSS</li>
                             <li>React</li>
                             <li>Redux</li>
-                            <li>Context API</li>
+                            <li>ContextAPI</li>
                             <li>Jest</li>
                         </ul>
                     </div>

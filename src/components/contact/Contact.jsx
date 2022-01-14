@@ -7,13 +7,6 @@ import emailjs from 'emailjs-com';
 import { useState } from 'react';
 import { Grid, Paper, TextField, Button } from '@material-ui/core';
 
-// const initialState = {
-//     name: '',
-//     subject: '',
-//     email: '',
-//     message: '',
-// }
-
 const Contact = () => {
     const formRef = useRef()
     const [inputs, setInputs] = useState('')
@@ -114,7 +107,7 @@ const Contact = () => {
                                     >
                                         Submit
                                     </Button>
-                                    {sent && 'Thank you!'}
+                                    {sent && <p>Thank you!</p>}
                                 </form>
                             </Paper>
                         </Grid>

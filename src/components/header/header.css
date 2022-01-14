@@ -1,34 +1,30 @@
 .header {
-    height: 7vh;
+    height: 8vh;
     width: 100%;
-    background-color: white;
-    opacity: .5;
-    position: fixed;
+    background-color: transparent;
+    /* opacity: .5; */
+    /* position: fixed; */
     z-index: 100;
     display: flex;
     align-items: center;
-    /* border: 1px solid lightgray; */
-}
-
-.nav {
-    width: 100%;
-    display: flex;
+    /* border: 1px solid red; */
 }
 
 .links-left {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 50%;
     /* border: 1px solid red; */
 }
 
 .links-left a {
     color: black;
+    background-color: white;
     text-align: center;
     width: 12%;
     text-decoration: none;
     font-size: 1.1rem;
-    border: 2px solid black;
+    border: 0.1rem solid black;
     border-radius: 30px;
     margin: 0 1rem;
     padding: .2rem 0;
@@ -36,16 +32,27 @@
 }
 
 .links-right {
-    /* border: 1px solid white; */
-    width: 100%;
+    /* border: 1px solid red; */
+    width: 50%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
-.links-right p{
-    color: black;
+.links-right a {
     /* border: 1px solid red; */
-    width: 20%;
-    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
+.social {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 1rem;
+}
+
+.social-g {
+    width: 3.3rem;
+    height: 3.3rem;
+    margin: 0 1rem;
+}

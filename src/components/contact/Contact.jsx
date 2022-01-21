@@ -48,6 +48,40 @@ const Contact = () => {
                     </div>
 
                     <div className="c-right">
+                        <div className="card">
+                            <div className="container">
+                                <p className="c-desc">
+                                    <b>Interested?</b> Send me an email!
+                                </p>
+                                <form ref={formRef} onSubmit={handleSubmit}>
+                                    <input
+                                        type='text'
+                                        placeholder='Name'
+                                        name='user_name'
+                                    />
+                                    <input
+                                        type='text'
+                                        placeholder='Subject'
+                                        name='user_subject'
+                                    />
+                                    <input
+                                        type='text'
+                                        placeholder='Email'
+                                        name='user_email'
+                                    />
+                                    <textarea
+                                        rows={5}
+                                        placeholder='Type message!'
+                                        name='message'
+                                    />
+                                    <button>Submit</button>
+                                    {sent && <p>Thank you!</p>}
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* <div className="c-right">
                         <Grid>
                             <Paper elevation={24} style={paperStyle} className='paper'>
                                 <p className="c-desc">
@@ -111,7 +145,7 @@ const Contact = () => {
                                 </form>
                             </Paper>
                         </Grid>
-                    </div>
+                    </div> */}
                     
 
                 </div>

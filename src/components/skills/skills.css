@@ -38,15 +38,34 @@
     font-size: 1.5rem;
 }
 
+
+/* LAPTOP VIEW */
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    
+}
+
+/* LAPTOP VIEW */
+
+
+/* TABLET VIEW */
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    
+}
+
+/* TABLET VIEW */
+
+
+/* PHONE VIEW */
+
 @media screen and (max-width: 480px) {
     .skills {
         height: 70vh;
-        /* border: 1px solid red; */
         margin-top: 5%;
     }
 
-    .skills-texts {
-        /* border: 1px solid red; */ 
+    .skills-texts { 
         width: 100%;
     }
 
@@ -63,3 +82,5 @@
         font-size: 1.4rem;
     }
 }
+
+/* PHONE VIEW */

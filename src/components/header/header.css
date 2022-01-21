@@ -90,14 +90,36 @@
     margin: 0 1rem;
 }
 
+
+/* LAPTOP VIEW */
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    
+}
+
+/* LAPTOP VIEW */
+
+
+/* TABLET VIEW */
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    
+}
+
+/* TABLET VIEW */
+
+
+/* PHONE VIEW */
+
 @media screen and (max-width: 480px) {
     .header {
         flex-direction: column;
         height: 11vh;
         width: 100%;
-        /* border: 1px solid red; */
     }
     .links-left {
         width: 100%;
     }
 }
+
+/* PHONE VIEW */

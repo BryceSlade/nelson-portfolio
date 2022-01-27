@@ -88,15 +88,21 @@
     margin: 0 1rem;
 }
 
+/* @media screen and (max-width: 1500px) and (min-width: 769px) {
+    
+} */
+
 .header label, #hamburger { 
     display: none;
 }
 
+
+
 /* LAPTOP VIEW */
 
-@media screen and (max-width: 1024px) and (min-width: 769px) {
+/* @media screen and (max-width: 1024px) and (min-width: 769px) {
     
-}
+} */
 
 /* LAPTOP VIEW */
 
@@ -107,12 +113,13 @@
     .header {
         height: unset;
         align-items: unset;
+        width: 100%;
     }
     
     .links-left a {
         box-sizing: border-box;
         display: block;
-        width: 50%;
+        width: 100%;
     }
 
     .header label { 
@@ -129,7 +136,7 @@
     }
 
     .header input:checked ~ .links-left {
-        display: block; 
+        display: block;
     }
 
     .links-right {

@@ -38,11 +38,24 @@
     font-size: 1.5rem;
 }
 
+/* DESKTOP VIEW */
+
+@media screen and (max-width: 1362px) and (min-width: 1025px) {
+    .s {
+        font-size: 1.5vw;
+    }
+}
+
+/* DESKTOP VIEW */
+
+
 
 /* LAPTOP VIEW */
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-    
+    .s {
+        font-size: 2.2vw;
+    }
 }
 
 /* LAPTOP VIEW */
@@ -51,7 +64,18 @@
 /* TABLET VIEW */
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
-    
+    .s {
+        font-size: 2.4vw;
+    }
+
+    .skills-texts { 
+        width: 100%;
+    }
+
+    .skills-container {
+        border-top: 2px solid #ff8317;
+        width: 100%;
+    }
 }
 
 /* TABLET VIEW */

@@ -27,7 +27,7 @@ const ProductList = () => (
                             <li>Node</li>
                             <li>SQL</li>
                             <li>Express</li>
-                            <li>VS Code</li>
+                            <li>VSCode</li>
                             <li>GitHub</li>
                             <li>Deployment</li>
                         </ul>

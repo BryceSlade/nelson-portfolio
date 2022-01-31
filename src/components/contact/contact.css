@@ -2,7 +2,6 @@
     height: 100vh;
     position: relative;
     padding-top: 3.5%;
-    /* border: 1px solid red; */
 }
 
 .c-bg {
@@ -109,9 +108,7 @@ button:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     background-color: white;
-    /* border: 1px solid red; */
     width: 100%;
-    /* height: 60vh */
 }
   
 
@@ -121,14 +118,27 @@ button:hover {
   
 .container {
     margin: 3%;
-    /* border: 1px solid red; */
 }
 
 
 /* LAPTOP VIEW */
 
-@media screen and (max-width: 1024px) and (min-width: 769px) {
-    
+@media screen and (max-width: 987px) and (min-width: 769px) {
+    .c-title {
+        font-size: 6vw;
+    }
+}
+
+@media screen and (max-width: 887px) and (min-width: 769px) {
+    .c-title {
+        font-size: 5.5vw;
+    }
+}
+
+@media screen and (max-width: 863px) and (min-width: 769px) {
+    .c-info-item p {
+        font-size: 2.6vw;
+    }
 }
 
 /* LAPTOP VIEW */
@@ -137,7 +147,16 @@ button:hover {
 /* TABLET VIEW */
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
-    
+    .c-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 543px) {
+    .c-title {
+        font-size: 10vw;
+    }
 }
 
 /* TABLET VIEW */
@@ -153,10 +172,16 @@ button:hover {
     .c-wrapper {
         flex-direction: column;
     }
+
+    .c-info-item p {
+        font-size: 4vw;
+    }
 }
 
-@media screen and (max-width: 390px) {
-    
+@media screen and (max-width: 383px) {
+    .c-title {
+        font-size: 9vw;
+    }
 }
 
 /* PHONE VIEW */

@@ -8,6 +8,7 @@
 
 .pl-texts {
     width: 65%;
+    /* border: 1px solid red; */
 }
 
 .pl-title {
@@ -16,7 +17,7 @@
 }
 
 .pl-desc {
-    margin: 20px 0;
+    margin: 1.25rem 0;
     font-size: 1.5rem;
     border-bottom: 2px solid #ff8317;
     padding-bottom: 3%;
@@ -28,3 +29,36 @@
     justify-content: space-between;
     width: 100%;
 }
+
+
+/* LAPTOP VIEW */
+
+@media screen and (max-width: 919px) {
+    .pl-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* LAPTOP VIEW */
+
+
+/* TABLET VIEW */
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .pl-texts {
+        width: 100%;
+    }
+}
+
+/* TABLET VIEW */
+
+
+@media screen and (max-width: 480px) {
+    .pl {
+        padding: 0;
+    }
+}
+
+/* PHONE VIEW */

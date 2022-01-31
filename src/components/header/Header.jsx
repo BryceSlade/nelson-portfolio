@@ -6,8 +6,10 @@ import twitter from '../../img/twitter.png';
 const Header = () => {
     return (
         <div className="header">
-            <label id="hamburger">&#9776;</label>
-            <input type="checkbox" id="hamburger"/>
+            <input id="menu-toggle" type="checkbox"/>
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
             <div className="links-left">
                 <a href='#home'>Home</a>
                 <a href='#about'>About</a>

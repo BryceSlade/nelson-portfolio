@@ -7,8 +7,8 @@ const Header = () => {
     return (
         <div className="header">
             <input id="menu-toggle" type="checkbox"/>
-            <label class='menu-button-container' for="menu-toggle">
-                <div class='menu-button'></div>
+            <label className='menu-button-container' htmlFor="menu-toggle">
+                <div className='menu-button'></div>
             </label>
             <div className="links-left">
                 <a href='#home'>Home</a>

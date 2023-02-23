@@ -22,7 +22,7 @@ const Contact = () => {
     }
 
     return (
-        <secion id='contact'>
+        <section id='contact'>
             <div className="c">
                 <div className="c-bg"></div>
                 <div className="c-wrapper">
@@ -79,7 +79,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-        </secion>
+        </section>
     )
 }
 

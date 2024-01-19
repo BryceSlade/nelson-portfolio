@@ -7,7 +7,6 @@ const Intro = () => {
             <div className='i'>
                 <div className='i-left'>
                     <div className='i-left-wrapper'>
-                    <h1 className='update'>Update to this site is pending...</h1>
                         <h1 className='i-intro'>Hello. The pleasure is mine.</h1>
                         <h1 className='i-name'>I'm Nelson Slade</h1>
                         <div className="i-title">
